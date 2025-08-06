@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        border: inline-block;
+    }
+    .circle{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    .red{
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="cointainer">
+        <div class="circle" id ="one"></div>
+        <div class="circle" id ="two"></div>
+        <div class="circle" id ="three"></div>
+    </div>
+    
+    <script>
+        
+        let colors = ["red", "blue", "green"];
+        setTimeout =2000;
+colors.forEach(color  => {
+  let h1 = document.getElementById("one");
+  h1.innerText = color;
+  h1.style.color = "red" ;
+  document.body.appendChild(h1,);
+});
+    </script>
+
+
+</body>
+
+</html>
